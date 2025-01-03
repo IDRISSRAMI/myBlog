@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+            color: #333;
+        }
+  
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        /* Add this to your existing CSS file */
+  @keyframes buttonHover {
+  0% {
+        transform: scale(1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+    
+  
+  
+  nav a.btn {
+    background-color: #f16a45;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    height: 20%;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Add hover animation */
+  nav a.btn:hover {
+    animation: buttonHover 0.6s ease-in-out;
+  }
+  
+  
+        header {
+            background-color: #fef4f2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+        
+  
+        header .logo {
+            font-weight: bold;
+            color: #f16a45;
+            height: 5%;
+            width: 2%;
+           
+        }
+  
+  
+        nav {
+            display: flex;
+            gap: 20px;
+            
+        }
+  
+       /* Change color of navigation links when hovered */
+  nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s; /* smooth transition */
+  }
+  
+  /* Hover effect for links */
+  nav a:hover {
+    color: #f16a45; /* change color to the same as the button */
+    transform: scale(1.1); /* optional: slightly enlarge the link */
+  }
+  
+  
+        .hero {
+            text-align: center;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            
+        }
+        .hero .wrapper {
+            display: flex;}
+            .hero-img{
+                height: 20%;
+                width: 30%;
+            }
